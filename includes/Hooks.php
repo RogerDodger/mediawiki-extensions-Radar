@@ -57,8 +57,8 @@ class Hooks {
 
       $circlePoint = function($angle, $length, $minOffset=null, $maxOffset=null)
                          use ($width) {
-         $minOffset ??= 10;
-         $maxOffset ??= 24;
+         $minOffset = $minOffset ?? 10;
+         $maxOffset = $maxOffset ?? 24;
          $center = $width / 2;
          $scale = $center - $maxOffset - $minOffset;
          return [
