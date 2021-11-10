@@ -1,0 +1,25 @@
+{
+   "name": "Radar",
+   "author": "RogerDodger",
+   "url": "https://www.mediawiki.org/wiki/Extension:Radar",
+   "description": "Generate SVG radar chart from data using <code>&lt;radar&gt;</code> tag",
+   "version": "1.0",
+   "license-name": "GPL-3.0-or-later",
+   "type": "parserhook",
+   "ResourceModules": {
+      "ext.radar": {
+         "styles": [ "style.css" ]
+      }
+   },
+   "ResourceFileModulePaths": {
+      "localBasePath": "resources",
+      "remoteExtPath": "Radar"
+   },
+   "AutoloadNamespaces": {
+      "MediaWiki\\Extension\\Radar\\": "includes/"
+   },
+   "Hooks": {
+      "ParserFirstCallInit": "MediaWiki\\Extension\\Radar\\Hooks::onParserFirstCallInit"
+   },
+   "manifest_version": 2
+}

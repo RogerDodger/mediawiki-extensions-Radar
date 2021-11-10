@@ -1,0 +1,45 @@
+.radar {
+   --grid: #bbb;
+   --circle: #eee;
+   --plot-stroke: #777;
+   --plot-fill: #b6ebff; /* hsluv(200,100,90) */
+
+   max-width: 100%;
+   height: auto;
+}
+
+.skin-citizen-dark .radar,
+.dark .radar {
+   --grid: #4e4e4e;
+   --circle: #262626;
+   --plot-fill: #003437;
+}
+
+.radar-grid {
+   fill: none;
+   stroke: var(--grid);
+   stroke-width: 2;
+}
+
+.radar-circle {
+   fill: none;
+   stroke: var(--circle);
+   stroke-width: 2;
+}
+
+.radar-label {
+   font-size: 18px;
+   text-anchor: middle;
+   fill: currentColor;
+}
+
+.radar-label textPath {
+   dominant-baseline: middle;
+}
+
+.radar-plot {
+   fill: var(--plot-fill);
+   fill-opacity: 0.8;
+   stroke: var(--plot-stroke);
+   stroke-width:  2;
+}
